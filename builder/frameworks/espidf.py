@@ -1599,7 +1599,7 @@ if board_flash_size != idf_flash_size:
 # To embed firmware checksum a special argument for esptool.py is required
 #
 
-extra_elf2bin_flags = "--elf-sha256-offset 0xb0"
+extra_elf2bin_flags = ""  # "--elf-sha256-offset 0xb0"
 # https://github.com/espressif/esp-idf/blob/master/components/esptool_py/project_include.cmake#L58
 # For chips that support configurable MMU page size feature
 # If page size is configured to values other than the default "64KB" in menuconfig,
